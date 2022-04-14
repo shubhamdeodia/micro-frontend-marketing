@@ -1,5 +1,12 @@
 {
   "realm": "NuanceCustomers",
+  "auth-server-url": "https://mtl-neam-kc01.nuance.mobi:8443/auth/",
   "url": "https://mtl-neam-kc01.nuance.mobi:8443/auth/",
-  "clientId": "ent-portal-core"
+  "ssl-required": "all",
+  "resource": "docs-client",
+  "clientId": "docs-client",
+  "credentials": {
+    "secret": "ab9d2e21-0a86-4a59-8793-8db9bc199f07"
+  },
+  "confidential-port": 0
 }
