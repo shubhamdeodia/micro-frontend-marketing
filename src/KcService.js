@@ -1,5 +1,5 @@
-import Keycloak from "keycloak-js";
-import kcConfig from "./keycloak.json";
+import Keycloak from 'keycloak-js';
+import kcConfig from './keycloak.json';
 const _kc = new Keycloak({ ...kcConfig });
 
 /**
@@ -10,7 +10,7 @@ const _kc = new Keycloak({ ...kcConfig });
 const initKeycloak = (onAuthenticatedCallback) => {
   _kc
     .init({
-      onLoad: "login-required",
+      onLoad: 'login-required',
     })
     .then((authenticated) => {
       if (authenticated) {
