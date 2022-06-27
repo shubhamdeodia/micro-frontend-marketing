@@ -11,6 +11,8 @@ const initKeycloak = (onAuthenticatedCallback) => {
   _kc
     .init({
       onLoad: 'login-required',
+      pkceMethod: 'S256'
+
     })
     .then((authenticated) => {
       if (authenticated) {
